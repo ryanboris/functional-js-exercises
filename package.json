@@ -1,0 +1,38 @@
+{
+  "name": "basic_node_sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "nodemon --exec babel-node ./src/index.js",
+    "serve": "npm run build && node dist/index.js",
+    "test": "jest --watch --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.2.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.2.7",
+    "jsdoc": "^3.6.3",
+    "nodemon": "^2.0.2",
+    "prettier": "^2.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "concurrently": "^5.1.0",
+    "jsdom": "^16.2.2"
+  }
+}
